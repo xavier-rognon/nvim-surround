@@ -20,56 +20,56 @@ M.default_opts = {
     },
     surrounds = {
         ["("] = {
-            add = { "( ", " )" },
+            add = { "(", ")" },
             find = function()
                 return M.get_selection({ motion = "a(" })
             end,
             delete = "^(. ?)().-( ?.)()$",
         },
         [")"] = {
-            add = { "(", ")" },
+            add = { "( ", " )" },
             find = function()
                 return M.get_selection({ motion = "a)" })
             end,
             delete = "^(.)().-(.)()$",
         },
         ["{"] = {
-            add = { "{ ", " }" },
+            add = { "{", "}" },
             find = function()
                 return M.get_selection({ motion = "a{" })
             end,
             delete = "^(. ?)().-( ?.)()$",
         },
         ["}"] = {
-            add = { "{", "}" },
+            add = { "{ ", " }" },
             find = function()
                 return M.get_selection({ motion = "a}" })
             end,
             delete = "^(.)().-(.)()$",
         },
         ["<"] = {
-            add = { "< ", " >" },
+            add = { "<", ">" },
             find = function()
                 return M.get_selection({ motion = "a<" })
             end,
             delete = "^(. ?)().-( ?.)()$",
         },
         [">"] = {
-            add = { "<", ">" },
+            add = { "< ", " >" },
             find = function()
                 return M.get_selection({ motion = "a>" })
             end,
             delete = "^(.)().-(.)()$",
         },
         ["["] = {
-            add = { "[ ", " ]" },
+            add = { "[", "]" },
             find = function()
                 return M.get_selection({ motion = "a[" })
             end,
             delete = "^(. ?)().-( ?.)()$",
         },
         ["]"] = {
-            add = { "[", "]" },
+            add = { "[ ", " ]" },
             find = function()
                 return M.get_selection({ motion = "a]" })
             end,
